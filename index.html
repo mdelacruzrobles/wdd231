@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel De La Cruz">
+    <meta name="description" content="">
     <title>Document</title>
+<!--Stylesheets-->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/large.css">
+<script src="scrypts/navigation.js" defer></script>
+<script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>Miguel De La Cruz Robles</h1>
+    <header>
+        <img src="images/fc-barcelona-logo-svgrepo-com.svg" alt="Site Logo" width="512" height="512">
+        <span>Miguel De La Cruz</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <div>
+                <p>Hello! I'm Miguel De La Cruz. I'm originally from Peru and currently live in Connecticut. I'm a husband and father of three. I'm also a web development student working toward improving my skills in HTML, CSS, and JavaScript.
+
+Outside of school, I love soccer, especially FC Barcelona. I enjoy spending time with my family, learning new things, and exploring technology. My goal is to continue growing as a developer and build useful projects.</p>
+            </div>  
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <div>
+                <img src="images/profilephoto.jpg" alt="profile photo">
+            </div>
+        </section>
+        <section class="courses"><h2>Web Certificate Courses</h2></section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+            <a href="https://github.com/mdelacruzrobles" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="https://www.facebook.com/miguel.delacruz.3538" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/mickydlacruz/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+        </div>
+        <p>&copy;<span id="currentyear"></span></p>
+        <p>Miguel De La Cruz</p>
+        <p>Connecticut</p>
+        <p id="lastModified"></p>
+
+    </footer>
 </body>
 </html>
