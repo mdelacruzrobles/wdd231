@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/base.css">
 <link rel="stylesheet" href="styles/large.css">
-<script src="scrypts/navigation.js" defer></script>
-<script src="scripts/courses.js" defer></script>
+<script type="module" src="scripts/main.js"></script>
+
 </head>
 <body>
     <header>
@@ -42,7 +42,17 @@ Outside of school, I love soccer, especially FC Barcelona. I enjoy spending time
                 <img src="images/profilephoto.jpg" alt="profile photo">
             </div>
         </section>
-        <section class="courses"><h2>Web Certificate Courses</h2></section>
+        <section class="courses"><h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all-courses">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+            </div>
+            <div class="credit-counter">
+                <p>The total number of course listed below is <span id="total-credits">0</span></p>
+            </div>
+            <div id="course-container"></div>
+        </section>
     </main>
     <footer>
         <div class="social">

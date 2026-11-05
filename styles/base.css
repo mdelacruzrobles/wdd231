@@ -129,12 +129,25 @@ section.photo img {
 section.courses {
     grid-column: 1/-1;
 }
+#course-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+.filter-buttons {
+    text-align: center;
+}
+button:hover{
+    background-color: #A50044;
+}
 
 /************************* Footer ***************************/
 footer {
     background-color: #eee;
-    padding: 1rem 10px;
+    padding: 10px;
     text-align: center;
+    margin: 5px;
 }
 
 .social {
