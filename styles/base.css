@@ -69,13 +69,15 @@ header span {
     color: white;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
+    font-weight: 800;
 }
 
 .navigation li.current {
     background-color: #EDBB00;
+}
+.navigation li.current a {
     color: #000;
 }
-
 .navigation a:hover {
     background-color: #A50044;
 }
