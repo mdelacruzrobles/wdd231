@@ -9,6 +9,8 @@
     --hover-color: #38BDF8;
     --footer-background-color: #E2E8F0; 
     --font-family: "Montserrat", sans-serif;
+    --accent-color: #FACC15;
+    --text-color: #000000;
 }
 /************************* Header ***************************/
 header {
@@ -85,13 +87,13 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #FACC15;
+    background-color: var(--accent-color);
 }
 .navigation li.current a {
     color: #000;
 }
 .navigation a:hover {
-    background-color: #38BDF8;
+    background-color: var(--hover-color);
 }
  
 /**********************MAIN*******************/
@@ -159,7 +161,7 @@ h1{
 }
 main button{
     padding: 15px 50px;
-    background-color: #FACC15;
+    background-color: var(--accent-color);
     font-weight: 600;
 }
 .tag{
