@@ -110,8 +110,8 @@ h1{
     gap: 1rem;
 }
  .parent-grid.list {
-        grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
+}
 .parent-grid.list img {
     display: none;
 }

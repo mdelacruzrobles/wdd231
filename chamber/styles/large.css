@@ -47,9 +47,13 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
+    .parent-grid.list {
+    display: flex;
+    flex-direction: column;
+    }
    .list img {
     display: none;
-    };
+    }
     .parent-grid.list .business-card h2 {
     flex: 1;
     text-align: left;
