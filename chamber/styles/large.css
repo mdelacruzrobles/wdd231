@@ -1,0 +1,91 @@
+@media only screen and (min-width: 38rem){
+    /********************HEADER****************************/
+    header {
+        display: flex;
+    }
+    header, main, footer {
+        max-width: 100%;
+        margin: 0 auto;
+    } 
+    .hamburger {
+        display: none;
+    }
+    
+    header span {
+        padding-left: 10px;
+    }
+    .navigation {
+        display: block;
+        flex: 1;
+        padding: 0 15px;
+        background-color: var(--background-color);
+    }
+    .navigation ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+    .navigation a {
+        display: block;
+
+    }
+     .navigation a:hover {
+        background-color: transparent;
+        color: var(--hover-color);
+    }
+
+    .navigation li.current {
+        background-color: transparent;
+        border-bottom: 2px solid #FACC15;
+    }
+
+    .navigation li.current a {
+        color: white;
+    }
+    /**********************MAIN*******************/
+    .parent-grid.grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+   .list img {
+    display: none;
+    };
+    .parent-grid.list .business-card h2 {
+    flex: 1;
+    text-align: left;
+    margin: 10px;
+    }
+
+    .parent-grid.list .business-card .tag {
+    flex: 2;
+    text-align: center;
+    margin: 0;
+    }
+
+    .parent-grid.list .business-card .card-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    }
+    /********************FOOTER******************/
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .social{
+        align-items: center;
+        justify-content: center;
+    }
+    .social a{
+        width: 60px;
+        height: 60px;
+        border-radius: 40px;
+        border: black solid 1px;
+    }
+    .footer-grid1 p {
+        padding-left: 5px;
+    }
+    
+}

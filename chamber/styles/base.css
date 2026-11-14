@@ -1,0 +1,221 @@
+/************************* Site Wide ************************/
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #3c4061;
+    --font-color-heading: #FFFFFF;
+    --hover-color: #38BDF8;
+    --footer-background-color: #E2E8F0; 
+}
+/************************* Header ***************************/
+header {
+    display: grid;
+    grid-template-columns: 60px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: var(--background-color);
+}
+
+header img {
+    display: block;
+    width: 60px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--font-color-heading);
+}
+
+/************************* Hamburger ***************************/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--font-color-heading);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/************************* Navigation ***************************/
+.navigation {
+    display: none;
+    grid-column: 1/-1;
+    background-color:var(--background-color);
+
+}
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: 800;
+    width: 100%;
+}
+.navigation li {
+    width: 100%;
+}
+
+.navigation li.current {
+    background-color: #FACC15;
+}
+.navigation li.current a {
+    color: #000;
+}
+.navigation a:hover {
+    background-color: #38BDF8;
+}
+ 
+/**********************MAIN*******************/
+h1{
+    margin: 10px;
+    padding-left: 5px;
+}
+
+.parent-grid.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    gap: 1rem;
+}
+ .parent-grid.list {
+        grid-template-columns: 1fr;
+    }
+.parent-grid.list img {
+    display: none;
+}
+
+.parent-grid.list .business-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.parent-grid.list .business-card h2 {
+    flex: 1;
+    text-align: left;
+    margin: 10px;
+}
+
+.parent-grid.list .business-card .tag {
+    flex: 2;
+    text-align: center;
+    margin: 0;
+    border-bottom: none;
+}
+
+.parent-grid.list .business-card .card-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.business-card {
+    background-color:#F1F5F9;
+    padding: 5px;
+    margin: 5px;
+}
+
+.filter-buttons {
+    text-align: center;
+    justify-content: center;
+    
+}
+main button{
+    padding: 15px 50px;
+    background-color: #FACC15;
+    font-weight: 600;
+}
+.tag{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.card-details {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+    margin: 6px;
+}
+.card-details img{
+    display: block;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 100%;
+    max-width: 180px;
+    max-height: 200px;
+    object-fit: cover;
+
+}
+.card-details p {
+    grid-column: 2;
+    margin: 5px 0;
+    padding: 10px;
+    overflow-wrap: anywhere;
+}
+
+/************************* Footer ***************************/
+footer {
+    background-color: var(--footer-background-color);
+    padding: 8px;
+    text-align: left;
+    margin: 3px;
+}
+footer p {
+    margin: 3px 6px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+#title {
+    font-weight: 800;
+}
