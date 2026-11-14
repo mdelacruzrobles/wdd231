@@ -36,11 +36,11 @@
 
     .navigation li.current {
         background-color: transparent;
-        border-bottom: 2px solid #FACC15;
+        border-bottom: 2px solid var(--accent-color);
     }
 
     .navigation li.current a {
-        color: white;
+        color: var(--font-color-heading);
     }
     /**********************MAIN*******************/
     .parent-grid.grid {
