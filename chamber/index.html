@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel De La Cruz">
+    <meta name="description" content="Connect with Stratford businesses, discover local events, check community updates, and grow with the Stratford Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/handshake.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Stratford Chamber of Commerce">
+    <meta property="og:description" content="Discover Stratford's local businesses, connect with community leaders, explore upcoming events, and grow your business with the Stratford Chamber of Commerce.">
+    <meta property="og:image" content="https://mdelacruzrobles.github.io/wdd231/images/profilephoto.jpg">
+    <meta property="og:url" content="https://mdelacruzrobles.github.io/wdd231/chamber">
+    <meta property="og:type" content="website">
+    <script src="scripts/main.js" defer></script>
+    <title>Stratford Chamber of Commerce | Home</title>
+</head>
+<body>
+    <header>
+        <img src="images/stratfordlogo.svg" alt="Site Logo" width="512" height="512">
+        <span>Stratford Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="hero-img">
+            <img src="images/stratfordlandscape.jpg" alt="Scenic landscape of Stratford, Connecticut" width="1500" height="800">
+            <div>
+                <h1>Welcome to Stratford</h1>
+                <p>Connect. Grow. Strengthen our business community.</p>
+                <button>Join the Chamber</button>
+            </div>
+        </section>
+        <div class="home-grid">
+            <section id="events">
+                <h2>Current events</h2>
+                <p>Upcoming business events and community activities</p>
+                <div id="events-container">
+                </div>
+            </section>
+            <section id="weather">
+                <h2>WEATHER</h2>
+                <div id="current-weather">
+                    <p id="current-temp"></p>
+                    <img id="weather-icon" src="" alt="">
+                </div>
+                <h3>Three-day forecast</h3>
+                <div id="forecast">
+                </div>
+            </section>
+            <section id="spotlights">
+                <h2>Business Spotlight</h2>
+                <div id="spotlight-container"></div>
+            </section>
+        </div>
+</main>
+ <footer>
+    <div class="footer-grid1">
+        <p id="title">Stratford Chamber of Commerce</p>
+        <p>850 Main st</p>
+        <p>Stratford, CT 06615</p>
+        <p>info@stratfordchamberofcommerce.org</p>
+        <p>2033942399</p>
+    </div>
+    <div class="social">
+        <a href="https://github.com/mdelacruzrobles" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+        <a href="https://www.facebook.com/miguel.delacruz.3538" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+        <a href="https://www.instagram.com/mickydlacruz/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+    </div>
+    <div class="footer-grid2">
+        <p>WDD231 Class Project</p>
+        <p>Miguel De La Cruz</p>
+        <p>&copy;<span id="currentyear"></span> Stratford Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+</footer>
+</body>
+</html>

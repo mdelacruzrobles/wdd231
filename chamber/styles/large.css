@@ -42,6 +42,22 @@
     .navigation li.current a {
         color: var(--font-color-heading);
     }
+    /**********************INDEX******************/ 
+    .home-grid {
+    grid-template-columns: 1fr 1fr;
+    }
+    .hero-img h1 {
+    font-size: 2rem;
+    }
+    .hero-img p {
+        font-size: 1rem;
+    }
+    .hero-img div {
+    top: 10%;
+    }
+    #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+    }
     /**********************MAIN*******************/
     .parent-grid.grid {
         grid-template-columns: repeat(3, 1fr);
